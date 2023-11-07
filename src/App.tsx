@@ -1,25 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
+import Landing from "./pages/landing/Landing";
+import Search from "./pages/search/Search";
+import View from "./pages/view/View";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AnimatePresence mode="wait">
+      <Routes>
+        <Route path="/" element={<Landing />}></Route>
+        <Route path="/search" element={<Search />}></Route>
+        <Route path="/view/:id" element={<View />}></Route>
+        <Route path="*" element={<h1>no page</h1>}></Route>
+      </Routes>
+    </AnimatePresence>
   );
 }
 
