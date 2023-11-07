@@ -8,12 +8,14 @@ function View() {
     <div>
       View{params.id}
       <br />
-      <ReactPlayer
-        width={320}
-        height={240}
-        controls={false}
-        url="https://www.youtube.com/watch?v=QyFcl_Fba-k"
-      />
+      <div>
+        <ReactPlayer
+          width={320}
+          height={240}
+          controls={false}
+          url="https://www.youtube.com/watch?v=QyFcl_Fba-k"
+        />
+      </div>
     </div>
   );
 }
