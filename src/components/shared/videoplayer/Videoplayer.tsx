@@ -8,19 +8,20 @@ interface VideopProps {
 }
 
 function Videoplayer({ loco, vidurl, classN }: VideopProps) {
-  var vidwidth: number = 1;
-  var vidheight: number = 1;
+  var vidwidth: number | string = 1;
+  var vidheight: number | string = 1;
   if (loco === "home") {
-    vidheight = 500;
-    vidwidth = 500;
+    vidheight = "100%";
+    vidwidth = "100%";
   } else {
     vidheight = 500;
-    vidwidth = 500;
+    vidwidth = 375;
   }
 
   return (
-    <div className={classN}>
+    <div className={`${classN} player-wrapper`}>
       <ReactPlayer
+        className="react-player"
         width={vidwidth}
         height={vidheight}
         controls={true}
