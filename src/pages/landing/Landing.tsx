@@ -24,11 +24,12 @@ function Landing() {
         </Row>
 
         <Row>
-          <Col>
+          <Col sm={{ offset: 1 }}>
             <h2>Featured</h2>
           </Col>
         </Row>
         <Row xs={1} md={2} lg={"auto"}>
+          
           <Col></Col>
         </Row>
       </Container>

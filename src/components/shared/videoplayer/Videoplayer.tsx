@@ -25,7 +25,7 @@ function Videoplayer({ loco, vidurl, classN }: VideopProps) {
         width={vidwidth}
         height={vidheight}
         controls={true}
-        url="https://www.youtube.com/watch?v=QyFcl_Fba-k"
+        url={vidurl}
       />
     </div>
   );
