@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import ReactPlayer from "react-player/youtube";
+import ReactPlayer from "react-player";
 
 function View() {
   const params = useParams<string>();
@@ -12,9 +12,11 @@ function View() {
         <ReactPlayer
           width={320}
           height={240}
-          controls={false}
+          controls={true}
           url="https://www.youtube.com/watch?v=QyFcl_Fba-k"
         />
+        <br />
+        
       </div>
     </div>
   );
