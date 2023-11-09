@@ -6,9 +6,9 @@ function Landing() {
   return (
     <div>
       <h1>Landing</h1>
-      <Stack direction="horizontal" gap={2}>
+      <Stack direction="horizontal"  gap={2}>
         <Videoplayer
-          classN="ms-auto"
+          classN="auto"
           loco="home"
           vidurl="https://www.youtube.com/watch?v=QyFcl_Fba-k"
         />

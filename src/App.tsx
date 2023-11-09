@@ -4,10 +4,12 @@ import { AnimatePresence } from "framer-motion";
 import Landing from "./pages/landing/Landing";
 import Search from "./pages/search/Search";
 import View from "./pages/view/View";
+import Nav from "./components/shared/nav/Nav";
 
 function App() {
   return (
     <AnimatePresence mode="wait">
+      <Nav />
       <Routes>
         <Route path="/" element={<Landing />}></Route>
         <Route path="/search" element={<Search />}></Route>
