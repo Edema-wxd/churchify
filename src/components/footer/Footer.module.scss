@@ -1,0 +1,16 @@
+.Footer {
+  position: absolute;
+  bottom: 1px;
+  margin: 0 auto;
+  width: -moz-available;
+  img {
+    max-width: 150px;
+  }
+  div {
+    height: fit-content;
+    margin: auto;
+  }
+}
+.left {
+  text-align: left;
+}

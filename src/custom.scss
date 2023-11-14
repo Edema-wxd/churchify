@@ -1,6 +1,12 @@
 // Override default variables before the import
-$body-bg: #fff;
-
+:root {
+  --main-white: #ffffff;
+  --main-dgrey: #343e3d;
+  --main-lgrey: #607466;
+  --main-pink: #f194b4;
+  --main-blue: #0056e2;
+}
+$body-bg: #ffffff;
 // Import Bootstrap and its default variables
 @import "~bootstrap/scss/bootstrap.scss";
 
