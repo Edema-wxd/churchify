@@ -1,13 +1,14 @@
 import React from "react";
 import Videoplayer from "../../components/shared/videoplayer/Videoplayer";
-import { Container, Stack, Row, Col } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import VidCard from "../../components/shared/card/VidCard";
 import randpicture from "../../assets/main-logo.png";
+import demo from "../../data/Demo";
 
 function Landing() {
   return (
     <div>
-      <Container style={{ textAlign: "center" }} fluid="true">
+      <Container style={{ textAlign: "center", padding: "16px" }} fluid="true">
         <Row>
           <h1>Landing</h1>
         </Row>
@@ -27,8 +28,8 @@ function Landing() {
           </Col>
           <Col style={{ textAlign: "left" }} sm>
             <div className="LDesc">
-              <h2>sermaon</h2>
-              <p>lorem</p>
+              <h2>Sermon title</h2>
+              <p>Breif description</p>
             </div>
           </Col>
         </Row>
@@ -49,30 +50,15 @@ function Landing() {
           lg={"auto"}
           className="gap-3"
         >
-          <Col>
-            <VidCard ctitle="random" ctxt="random txt" imgurl={randpicture} />
-          </Col>
-          <Col>
-            <VidCard ctitle="random" ctxt="random txt" imgurl={randpicture} />
-          </Col>
-          <Col>
-            <VidCard ctitle="random" ctxt="random txt" imgurl={randpicture} />
-          </Col>
-          <Col>
-            <VidCard ctitle="random" ctxt="random txt" imgurl={randpicture} />
-          </Col>
-          <Col>
-            <VidCard ctitle="random" ctxt="random txt" imgurl={randpicture} />
-          </Col>
-          <Col>
-            <VidCard ctitle="random" ctxt="random txt" imgurl={randpicture} />
-          </Col>
-          <Col>
-            <VidCard ctitle="random" ctxt="random txt" imgurl={randpicture} />
-          </Col>
-          <Col>
-            <VidCard ctitle="random" ctxt="random txt" imgurl={randpicture} />
-          </Col>
+          {demo.map((item, index) => (
+            <Col key={index}>
+              <VidCard
+                ctitle={item.title}
+                ctxt={demo[index].descript}
+                imgurl={randpicture}
+              />
+            </Col>
+          ))}
         </Row>
       </Container>
     </div>
