@@ -1,6 +1,6 @@
 import React from "react";
 import { Form, Button, Stack, Container, Row, Col } from "react-bootstrap";
-import randimg from "../../assets/logo.svg";
+
 
 function Contact() {
   return (
