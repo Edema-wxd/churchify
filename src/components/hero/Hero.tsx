@@ -8,11 +8,12 @@ function Hero() {
     <Container className={style.Hero}>
       <Row>
         <Col>
-          <Image src={biglogo} />
+          <Image style={{ maxWidth: "80vw" }} src={biglogo} />
         </Col>
         <Col className={style.Htxt}>
           <h1>Churchify</h1>
-          <h3>We bring the congregation cloer</h3>
+          <h3>One-stop Video Service for Religious Purposes</h3>
+          <p>We bring the congregation closer</p>
         </Col>
       </Row>
     </Container>

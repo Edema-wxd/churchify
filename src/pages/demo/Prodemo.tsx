@@ -10,7 +10,12 @@ function Prodemo() {
     <div>
       <Container style={{ textAlign: "center", padding: "16px" }} fluid="true">
         <Row>
-          <h1>Landing</h1>
+          <h1>Demo page</h1>
+        </Row>
+        <Row>
+          <Col>
+            <br />
+          </Col>
         </Row>
         <Row
           style={{
@@ -29,16 +34,28 @@ function Prodemo() {
           <Col style={{ textAlign: "left" }} sm>
             <div className="LDesc">
               <h2>Sermon title</h2>
-              <p>Breif description</p>
+              <p>Brief description</p>
             </div>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <br />
+            <br />
           </Col>
         </Row>
 
         <Row>
-          <Col sm={{ offset: 1 }}>
-            <h2>Featured</h2>
+          <Col sm={{ offset: 0 }}>
+            <h2>Featured Sermons</h2>
           </Col>
         </Row>
+        <Row>
+          <Col>
+            <br />
+          </Col>
+        </Row>
+
         <Row
           style={{
             margin: "auto",

@@ -10,7 +10,7 @@ function Cta() {
           <Image src={logo} />
         </Col>
         <Col>
-          <p className={style.left}>Headliner</p>
+          <p className={style.left}>We bring the Congregation Closer</p>
         </Col>
       </Row>
     </Container>

@@ -5,9 +5,11 @@ interface VidCardProps {
   ctitle?: string;
   ctxt?: string;
   imgurl?: string;
+  pagelink?: string;
+  videolink?: string;
 }
 
-function VidCard({ ctitle, ctxt, imgurl }: VidCardProps) {
+function VidCard({ ctitle, ctxt, imgurl, pagelink, videolink }: VidCardProps) {
   return (
     <Card style={{ margin: "0.5rem", minWidth: "fit-content", padding: "8px" }}>
       <Card.Img

@@ -22,8 +22,7 @@ function Videoplayer({ loco, vidurl, classN }: VideopProps) {
     <div className={`${classN} player-wrapper`}>
       <ReactPlayer
         className="react-player"
-        width={vidwidth}
-        height={vidheight}
+        style={{ width: vidwidth, height: vidheight, minWidth: 300, maxWidth: "90vw" }}
         controls={true}
         url={vidurl}
       />
