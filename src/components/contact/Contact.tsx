@@ -7,9 +7,25 @@ function Contact() {
     <>
       <h2>Contact Us</h2>
       <Container fluid>
-        <Row sm={1}>
-          <Col>radom teaxt</Col>
+        <Row>
           <Col>
+            <h5>Company Info</h5>
+            <Stack style={{ textAlign: "left" }}>
+              <div>
+                <img src="" alt="" />
+                <p>churchify@churchify.eba</p>
+              </div>
+              <div>
+                <img src="" alt="" />
+                <p>+234 8521 654 5658</p>
+              </div>
+              <div>
+                <img src="" alt="" />
+                <p>Address of Company</p>
+              </div>
+            </Stack>
+          </Col>
+          <Col sm>
             <Form style={{ textAlign: "left", margin: "1rem" }}>
               <Stack direction="vertical" gap={3}>
                 <Form.Group>
