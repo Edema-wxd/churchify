@@ -7,7 +7,7 @@ function Prodcaro() {
     <>
       <h2 style={{ marginTop: "2rem" }}>Products</h2>
       <br />
-      <Container>
+      <Container style={{ padding: "1rem 2rem" }}>
         <Row sm={2}>
           <Col>
             <Image src={placeimg} />

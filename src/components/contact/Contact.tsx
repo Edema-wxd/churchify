@@ -6,7 +6,7 @@ function Contact() {
   return (
     <>
       <h2>Contact Us</h2>
-      <Container fluid>
+      <Container fluid style={{ padding: "1rem 2rem" }}>
         <Row>
           <Col>
             <h5>Company Info</h5>
